@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+@import "variabels";
+
+// Global css
+*{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+  &::-webkit-scrollbar{
+    width: 1rem;
+  }
+  &::-webkit-scrollbar-track{
+    background: $black-bg;
+  }
+  &::-webkit-scrollbar-thumb{
+    background: $blue;
+    border-radius: 5rem;
+  }
+}
+body{
+  background: $black;
+  overflow-x: hidden;
+}
+section{
+  padding: 3rem 9%;
+}
+
+.heading{
+  text-align: center;
+  margin-bottom: 2rem;
+  span{
+    color: $blue;
+    font-size: 2rem;
+
+  }
+  h1{
+    font-size: 4rem;
+    color: $white;
+    margin-top: .5rem;
+  }
+}
+
+.btn{
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: $blue;
+  border: $border;
+  border-radius: 5rem;
+  cursor: pointer;
+  background: none;
+  &:hover{
+    background: $blue;
+    color: $black;
+  }
+}
+
+
+// css by section
+@import "header";
+@import "home";
+@import "about";
+@import "destination";
+@import "services";
+@import "gallery";
+@import "blogs";
+@import "footer";
+
+
+// sass --watch path_to_file_scss:path_to_file_css

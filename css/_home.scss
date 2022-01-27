@@ -1,0 +1,89 @@
+.home{
+  margin: 0 auto;
+  margin-top: 9rem;
+  width: 90%;
+  border-radius: 1rem;
+  background: linear-gradient($black-bg,$black-bg), url('../assets/home-bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+
+  .content{
+    text-align: center;
+    span{
+      font-weight: bolder;
+      color: transparent;
+      -webkit-text-stroke: .1rem $white;
+      font-size: 4vw;
+      display: block;
+    }
+    h3{
+      font-size: 6vw;
+      color: $white;
+
+    }
+    p{
+      max-width: 60rem;
+      margin: 1rem auto;
+      font-size: 1.4rem;
+      color: $light-color;
+      line-height: 1.5;
+    }
+  }
+}
+
+.book-form{
+  width: 80%;
+  margin: 1rem auto;
+  margin-top: -5rem;
+  background: $bg-color;
+  border-radius:1rem;
+  box-shadow: 0 .5rem 1rem rgba(17,17,17, .3);
+  padding: 3rem 2rem;
+  form{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    .inputBox{
+      flex: 1 1 25rem;
+      span{
+        font-size: 1.4rem;
+        color: $light-color;
+
+      }
+      input{
+        width: 100%;
+        padding: 1.2rem 1.4rem;
+        border-radius: 5rem;
+        border: $border;
+        font-size: 1.6rem;
+        color: $light-color;
+        text-transform: none;
+        background:none;
+        margin-top: 1rem;
+      }
+    }
+    .btn{
+      flex: 1 1 15rem;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .home{
+    margin-top: 10rem;
+    .content{
+      span{
+        font-size: 8vw;
+      }
+      h3{
+        font-size: 9vw;
+      }
+    }
+  }
+}
